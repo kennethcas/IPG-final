@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f2a81a285fa634fabea604190c4a1a, type: 3}
+  m_Name: DogKnight
+  m_EditorClassIdentifier: 
+  c_name: Dog Knight
+  c_voice: {fileID: 8300000, guid: 5798119d3455a584f86e2e18cce7d1ef, type: 3}
+  c_font: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  emotionPortraits:
+    standard: {fileID: 21300000, guid: cd7c73dca457ea14db8530a28d71b2b8, type: 3}
+    happy: {fileID: 21300000, guid: 864226597bec8c64ea6a8dc897b771a5, type: 3}
+    angry: {fileID: 21300000, guid: 4fbc21537b233284686abd9176f504aa, type: 3}

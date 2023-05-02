@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a1b65834e4a7943a01dfe6380295f6, type: 3}
+  m_Name: Test Dialogue Option
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: f632310ce2a26c74eb1725a624152269, type: 2}
+    c_text: First line test
+    characterEmotion: 0
+  - character: {fileID: 0}
+    c_text: second line testing
+    characterEmotion: 0
+  - character: {fileID: 0}
+    c_text: last line. I am wearing a santa hat.
+    characterEmotion: 0
+  questionText: What time is it??? Do you know?????!???!
+  optionsInfo:
+  - buttonName: It's 9pm
+    nextDialogue: {fileID: 0}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: e7426011ef35d094da9cb7181452c44a, type: 2}
+          m_TargetAssemblyTypeName: EventBehavior, Assembly-CSharp
+          m_MethodName: TestEvent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - buttonName: Yo momma
+    nextDialogue: {fileID: 0}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Button3
+    nextDialogue: {fileID: 0}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Button4
+    nextDialogue: {fileID: 0}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
