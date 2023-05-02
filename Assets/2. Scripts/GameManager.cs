@@ -51,6 +51,11 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("1.MainMenu");
+    }
+
     public void HelpScreen()
     {
         if (helpPanel.activeSelf) //RESUMING GAME AND HIDING HELP PANEL
