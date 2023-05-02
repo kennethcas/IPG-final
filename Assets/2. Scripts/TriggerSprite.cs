@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class TriggerSprite : MonoBehaviour
 {
+    //MAKES THE TRIGGER SPRITE ALWAYS FACE THE CAMERA DIRECTLY !!!!!!!!!
+
     [SerializeField]
     CinemachineVirtualCamera cmvam1;
     Transform camTransform;

@@ -42,10 +42,6 @@ public class Player : MonoBehaviour
     {
         CheckDialogue();
         CheckAttack();
-        /*if (attackTrigger)
-        {
-            
-        }*/
     }
 
     private void FixedUpdate()
@@ -54,21 +50,19 @@ public class Player : MonoBehaviour
         anim.SetFloat("Speed", speed);
     }
 
-    public void CheckDialogue()
+    public void CheckDialogue() //only checks if the dialogue UI is active
     {
         if (dialogueBox.activeSelf || dialogueOptionsUI.activeSelf)
         {
             playerController.enabled = false;
             playerInput.enabled = false;
             anim.SetTrigger("Idle");
-
         }
         else
         {
             playerController.enabled = true;
             playerInput.enabled = true;
         }
-
     }
 
     public void CheckAttack()

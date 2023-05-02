@@ -6,11 +6,7 @@ public class TestDialogueScript : MonoBehaviour
 {
     public DialogueBase dialogue;
 
-    public void TriggerDialogue()
-    {
-        DialogueManager.instance.EnqueDialogue(dialogue);
-    }
-
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -18,5 +14,11 @@ public class TestDialogueScript : MonoBehaviour
             TriggerDialogue();
         }
     }
-    
+
+    public void TriggerDialogue()
+    {
+        DialogueManager.instance.EnqueDialogue(dialogue);
+    }
+
+
 }
