@@ -8888,7 +8888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpPanel: {fileID: 1576740392}
-  cmvcam1: {fileID: 0}
+  cmvcam1: {fileID: 678599924}
 --- !u!4 &1856974336
 Transform:
   m_ObjectHideFlags: 0
@@ -9650,7 +9650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2053730028
 RectTransform:
   m_ObjectHideFlags: 0

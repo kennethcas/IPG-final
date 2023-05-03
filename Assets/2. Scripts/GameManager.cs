@@ -21,12 +21,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        //DEV TOOL -> NOT IN THE FINAL BUILD
+        /*if (Input.GetKeyDown(KeyCode.R))
         {
             RestartScene();
-        }
-
-        //CheckCameras();
+        }*/
 
     }
 
@@ -38,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckCameras()
     {
-        //Debug.Log("checking for triggers to switch CinemachineCameras");
+     
     }
 
     public void StartGame()
@@ -58,24 +57,19 @@ public class GameManager : MonoBehaviour
 
     public void HelpScreen()
     {
-        if (helpPanel.activeSelf) //RESUMING GAME AND HIDING HELP PANEL
+        //if the helpPanel is active
+        if (!helpPanel.activeInHierarchy) //RESUMING GAME AND HIDING HELP PANEL
         {
-            Debug.Log("help panel is active in hierarchy");
-            helpPanel.SetActive(false);
-            cmvcam1.enabled = true;
-            Time.timeScale = 1;
-            
-        }
-        else if (!helpPanel.activeSelf) //PAUSING AND SHOWING HELP PANEL
-        {
-            Debug.Log("help panel is  NOT active in hierarchy");
             helpPanel.SetActive(true);
             cmvcam1.enabled = false;
             Time.timeScale = 0;
+            
         }
-        
-
+        else if (helpPanel.activeInHierarchy) //PAUSING AND SHOWING HELP PANEL
+        {
+            helpPanel.SetActive(false);
+            cmvcam1.enabled = true;
+            Time.timeScale = 1;
+        }    
     }
-
-  
 }
